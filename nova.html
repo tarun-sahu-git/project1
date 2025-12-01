@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <style>
+        .main_div1 {
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 100vh;
+            background-image: url('bgi.jpg');
+            background-size: cover
+                /* background: linear-gradient(white, skyblue); */
+
+        }
+
+        .sub_div1 {
+            width: 100%;
+            height: 10%;
+            /* border: 5px solid black; */
+            /* background-color: aqua; */
+            display: flex;
+            gap: 50%;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .ul1_div1 {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+            align-items: center;
+        }
+        .li1:hover{
+            color: blue;
+        }
+
+        .h1_div1 {
+            color: blue;
+        }
+         .h1_div1:hover{
+            color: #121313;
+            font-weight: bolder;
+            font-size: xx-large;
+
+           
+        }
+
+        .sub_div2 {
+            /* border: 2px solid rgb(37, 233, 43); */
+            width: 90%;
+            height: 80%;
+            display: flex;
+            gap: 5%;
+
+            margin-top: 30px;
+            padding-left: 2%;
+            margin-left: 4%;
+            /* padding-right: 2%; */
+
+        }
+
+        .img1_div2_sub_div2 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .div1_sub_div2 {
+            /* border: 2px solid red; */
+            width: 50%;
+            height: 50%;
+            margin-top: 50px;
+        }
+
+        .div2_sub_div2 {
+            /* border: 2px solid red; */
+            width: 40%;
+            height: 50%;
+            margin-top: 50px;
+        }
+
+        .h1_div1_sub_div2 {
+            text-align: center;
+            color: rgb(14, 14, 15);
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+        .p1_div1_sub_div2 {
+            color: black;
+            font-size: larger;
+        }
+
+        .btn1_sub_div2 {
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+            color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: larger;
+            border-color: blue;
+        }
+
+        .btn1_sub_div2:hover {
+            background-color: rgb(93, 169, 235);
+            width: 150px;
+            height: 50px;
+            color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: larger;
+            border-color: rgb(10, 10, 10);
+        }
+
+        /* ..................................................css for second page ..............................................................*/
+        .main_div2 {
+            /* border: 2px solid yellow; */
+            /* background-image: url('bgi.jpg'); */
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            padding-top: 2%;
+
+        }
+
+        .h1_main_div2 {
+            text-align: center;
+            color: solid balck;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        .p1_main_div2 {
+            text-align: center;
+            font-size: larger;
+        }
+
+        .div1_main_div2 {
+            width: 80%;
+            height: 50%;
+            /* border: 2px solid blue; */
+            display: flex;
+            gap: 50px;
+            padding-left: 10%;
+
+        }
+
+        .subdiv1_main_div2 {
+            /* border: 2px solid black; */
+            width: 30%;
+            height: 80%;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .div2_main_div2 {
+            width: 80%;
+            height: 50%;
+            /* border: 2px solid rgb(216, 26, 80); */
+            display: flex;
+            gap: 50px;
+            padding-left: 10%;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 90%;
+            height: 50%;
+
+
+        }
+
+        .h2_div1_main_div2 {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .p1_div1_main_div2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .subdiv1_main_div2:hover {
+            border-bottom: 2px solid rgb(46, 78, 241);
+            width: 30%;
+            height: 80%;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        /*..................................css for third page............................................... */
+        .main_div3 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            gap: 2%;
+            margin-top: 10%;
+            align-items: center;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            background-image: url('bgi.jpg');
+            background-size: cover;
+            /* border: 2px solid red; */
+        }
+
+        .div1_main_div3 {
+            /* border: 2px solid black; */
+            width: 50%;
+            height: 80%;
+        }
+
+        .div1_main_div3:HOVER {
+            /* border: 2px solid black; */
+            width: 50%;
+            height: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        }
+
+        .div2_main_div3 {
+            /* border: 2px solid black; */
+            width: 50%;
+            height: 80%;
+            text-align: center;
+
+
+        }
+
+        .img_main_div3 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .p_div1_main_div3 {
+            margin-left: 5%;
+            font-weight: 1000;
+            font-size: medium;
+        }
+
+        .h1_div1_main_div3 {
+            margin-top: 10%;
+            margin-left: 5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+
+        .btn1_main_div3 {
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+            color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: larger;
+            border-color: rgb(225, 225, 234);
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        .btn1_main_div3:hover {
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+            color: rgb(242, 32, 231);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: larger;
+            border-color: rgb(225, 225, 234);
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        .div2_main_div3:hover {
+            /* border: 2px solid black; */
+            width: 50%;
+            height: 80%;
+            text-align: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        /*................................................. css for four page.................................................................. */
+        .main_div4 {
+            width: 100%;
+            height: 100vh;
+            /* border: 2px solid black; */
+            display: flex;
+            gap: 2%;
+            align-items: center;
+            background-image: url('bgi.jpg');
+            background-size: cover;
+
+        }
+
+        .subdiv1_main_div4 {
+            width: 50%;
+            height: 90%;
+            /* border: 2px solid red; */
+
+        }
+
+        .subdiv1_main_div4:hover {
+            width: 50%;
+            height: 90%;
+            border: 2px solid rgb(161, 221, 225);
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+        }
+
+        .subdiv2_main_div4 {
+            width: 750px;
+            height: 500px;
+            /* border: 2px solid purple; */
+            display: flex;
+            gap: 5%;
+            overflow-x: auto;
+            align-items: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+
+        }
+
+        .div1 {
+            width: 300px;
+            height: 85%;
+            /* border: 2px solid rgb(6, 6, 6); */
+            text-align: center;
+            margin-left: 10px;
+            /* background-color: aliceblue; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        .div1:hover {
+            width: 300px;
+            height: 85%;
+            /* border: 2px solid rgb(6, 6, 6); */
+            text-align: center;
+            margin-left: 10px;
+            background-color: aliceblue;
+        }
+
+        .b2 {
+            height: 50px;
+            width: 50px;
+            color: white;
+            border-radius: 50%;
+            background-color: blue;
+            margin-top: 100px;
+            margin-left: 500px;
+        }
+
+        .b3 {
+            height: 50px;
+            width: 50px;
+            color: white;
+            border-radius: 50%;
+            background-color: blue;
+            margin-top: 100px;
+
+        }
+
+        .b2:hover {
+            height: 50px;
+            width: 50px;
+            color: rgb(18, 17, 17);
+            border-radius: 50%;
+            background-color: rgb(233, 233, 240);
+            margin-top: 100px;
+            margin-left: 500px;
+        }
+
+        .b3:hover {
+            height: 50px;
+            width: 50px;
+            color: rgb(13, 13, 13);
+            border-radius: 50%;
+            background-color: rgb(222, 222, 236);
+            margin-top: 100px;
+
+        }
+
+        .h1_subdiv1_main_div4 {
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 40%;
+        }
+
+        .p_main_div4 {
+            /* text-align: center; */
+            padding-left: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+
+        }
+
+        .b1 {
+            color: white;
+            background-color: blue;
+            font-weight: bolder;
+            width: 100px;
+            height: 30px;
+        }
+
+        /*................................................ css for fifth page............................................................ */
+        .main_div5 {
+            /* border: 2px solid red; */
+            background-image: url('bgi.jpg');
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .div_div5 {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            gap: 5%;
+            margin-top: 50px;
+        }
+
+        .div1_div5 {
+            height: 70%;
+            width: 70%;
+            /* border: 5px solid rgb(167, 56, 56); */
+            margin-top: 50px;
+            margin-left: 30px;
+
+
+
+        }
+
+        .div1_div5:hover {
+            height: 70%;
+            width: 70%;
+            /* border: 5px solid rgb(167, 56, 56); */
+            margin-top: 50px;
+            margin-left: 30px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+        }
+
+        .h_maindiv5 {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .div2_div5 {
+            height: 50%;
+            width: 50%;
+            /* border: 5px solid rgb(31, 186, 17); */
+            padding-top: 30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            margin-left: 50px;
+            margin-top: 40px;
+
+
+        }
+
+        .p_maindiv5 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .s {
+            width: 250px;
+            height: 40px;
+            margin-left: 80px;
+            margin-top: 20px;
+            border-color: aqua;
+        }
+
+        .t {
+            width: 600px;
+            height: 60px;
+            margin-left: 80px;
+            margin-top: 20px;
+            border-color: aqua;
+
+        }
+
+        .s {
+            width: 250px;
+            height: 40px;
+            margin-left: 80px;
+            margin-top: 20px;
+            border-color: aqua;
+        }
+
+        .t:hover {
+            width: 600px;
+            height: 60px;
+            margin-left: 80px;
+            margin-top: 20px;
+            border-color: rgb(158, 151, 230);
+        }
+
+        .b4 {
+            width: 100px;
+            height: 30px;
+            background-color: blue;
+            border-color: rgb(19, 19, 19);
+            margin-left: 80px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        .b4:hover {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(23, 198, 87);
+            border-color: rgb(19, 19, 19);
+            margin-left: 80px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        .m {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+
+        }
+
+        .v {
+            height: 50px;
+            width: 500px;
+            /* border:2px solid black; */
+            display: flex;
+            gap: 50px;
+            padding-top: 5px;
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+
+        .v:hover {
+            height: 50px;
+            width: 500px;
+            /* border:2px solid rgb(165, 57, 223); */
+            display: flex;
+            gap: 50px;
+            padding-top: 5px;
+            margin-left: 20px;
+            margin-top: 25px;
+            border-bottom: 2px solid blue;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+        }
+
+        /*................................................... css for last page.............................................................................................. */
+        .main_div6 {
+            height: 100vh;
+            width: 100%;
+            background-image: url('bgi.jpg');
+            background-size: cover;
+        }
+
+        .m3 {
+            width: 200px;
+            height: 70px;
+
+        }
+
+        .div2_div6 {
+            /* border: 2px solid black; */
+            display: flex;
+            gap: 200px;
+            margin: 50px;
+            
+        }
+        h4:hover{
+            color: blue;
+        }
+        .a{
+            text-align: center;
+            color: #070707;
+            font-weight: bolder;
+            font-weight: bolder;
+        }
+        i:hover{
+            color: white;
+          
+           
+        }
+        i{
+              height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-left: 5px;
+           
+        }
+       
+       
+    </style>
+</head>
+
+<body>
+    <div class="main_div1">
+        <div class="sub_div1">
+            <h1 class="h1_div1">NOVA</h1>
+            <ul class="ul1_div1">
+                <li class="li1">Home</li>
+                <li class="li1">Feature</li>
+                <li class="li1">About</li>
+                <li class="li1">Pricing</li>
+                <li class="li1">Contact</li>
+                <li class="li1">🛒</li>
+                <li class="li1"><i class="fa-regular fa-bell"></i></li>
+            </ul>
+        </div>
+        <div class="sub_div2">
+            <div class="div1_sub_div2">
+                <h class="h1_div1_sub_div2">You Are Using Freely Lite <br>Version</h>
+                <p class="p1_div1_sub_div2">please purchase full ccersion of the template to get all section<br> and
+                    permission ti use commercial
+                    project
+                </p>
+                <button class="btn1_sub_div2">Get started ⟩</button>
+            </div>
+            <div class="div2_sub_div2">
+                <img class="img1_div2_sub_div2" src="computer.jpg">
+            </div>
+        </div>
+    </div>
+    <!--................................................................. html for second page...................................................... -->
+    <div class="main_div2">
+        <h1 class="h1_main_div2">Speacializing In </h1>
+        <p class="p1_main_div2">stop wasting time and money designing and managing a website <br>that doesnt get
+            .Happiness guarnateed</p>
+        <div class="div1_main_div2">
+            <div class="subdiv1_main_div2">
+                <img src="graphic.jpg.png">
+                <h2 class="h2_div1_main_div2">Graphics Designs</h2>
+                <p class="p1_div1_main_div2">Short description for the ones who look for something new</p>
+            </div>
+            <div class="subdiv1_main_div2">
+                <img src="print.jpg.png">
+                <h2 class="h2_div1_main_div2">Print Design</h2>
+                <p class="p1_div1_main_div2">Short description for the ones who look for something new.</p>
+            </div>
+            <div class="subdiv1_main_div2">
+                <img src="businees.jpg.png">
+                <h2 class="h2_div1_main_div2">Businees Analysis</h2>
+                <p class="p1_div1_main_div2">Short description for the ones who look for something new.</p>
+            </div>
+        </div>
+        <div class="div2_main_div2">
+            <div class="subdiv1_main_div2">
+                <img src="deploy.jpg.png">
+                <h2 class="h2_div1_main_div2">Web Development</h2>
+                <p class="p1_div1_main_div2">Short description for the ones who look for something new.</p>
+            </div>
+            <div class="subdiv1_main_div2">
+                <img src="security.jpg.png">
+                <h2 class="h2_div1_main_div2">Best Security</h2>
+                <p class="p1_div1_main_div2">Short description for the ones who look for something new.</p>
+            </div>
+            <div class="subdiv1_main_div2">
+                <img src="design.jpg.png">
+                <h2 class="h2_div1_main_div2">Web Design</h2>
+                <p class="p1_div1_main_div2">Short description for the ones who look for something new.</p>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- ...........................................................html for third page .......................................... -->
+    <div class="main_div3">
+        <div class="div1_main_div3">
+            <h1 class="h1_div1_main_div3">The Future Of designing<br>Start Here</h1>
+            <p class="p_div1_main_div3">Stop wasting time and money designing and managing a website that doesn’t get
+                results.<br> Happiness guaranteed,<br><br><br>
+
+                ✔️ Stop wasting time and money designing and managing a website that doesn’t get results.<br>
+                ✔️ Stop wasting time and money designing and managing.<br>
+                ✔️ Stop wasting time and money designing and managing a website that doesn’t get results.<br>
+            </p>
+            <button class="btn1_main_div3">Read More</button>
+        </div>
+        <div class="div2_main_div3">
+            <img class="img_main_div3" src="future.jpg.png">
+        </div>
+
+    </div>
+    <!-- ............................................html for four page ................................................................-->
+</body>
+<div class="main_div4">
+    <div class="subdiv1_main_div4">
+        <h1 class="h1_subdiv1_main_div4">Pricing Plan</h1>
+        <p class="p_main_div4">Stop wasting time and money designing and managing a website that doesn’t get
+            results.<br>
+            Happiness guaranteed!<br>Stop wasting time and money designing and managing a website that doesn’t get
+            results.<br>
+            Happiness guaranteed!</p>
+
+        <button class="b2"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="b3"><i class="fa-solid fa-angle-right"></i></button>
+
+    </div>
+    <div class="subdiv2_main_div4">
+        <div class="div1">
+            <h4>Basic design</h4>
+            <h2>Web Design</h2>
+            <h1>$ 29.00</h1><br>
+            <p>
+                Carefully crafted components<br><br>
+                Amazing page examples<br><br>
+                Super friendly support team<br><br>
+                Awesome Support
+            </p><br><br>
+            <button class="b1">Get Started</button>
+
+        </div>
+        <div class="div1">
+            <h4>Pro Design</h4>
+            <h2>Design & Develop</h2>
+            <h1>$ 199.00</h1><br>
+            <p>
+                Carefully crafted components<br><br>
+                Amazing page examples<br><br>
+                Super friendly support team<br><br>
+                Awesome Support
+            </p><br><br>
+            <button class="b1">Get Started</button>
+
+        </div>
+        <div class="div1">
+            <h4>Standard Design</h4>
+            <h2>Web Development</h2>
+            <h1>$ 209.00</h1><br>
+            <p>
+                Carefully crafted components<br><br>
+                Amazing page examples<br><br>
+                Super friendly support team<br><br>
+                Awesome Support
+            </p><br><br>
+            <button class="b1">Get Started</button>
+
+        </div>
+
+    </div>
+</div>
+<!--......................................................... html for fifth page........................................................... -->
+<div class="main_div5">
+    <h1 class="h_maindiv5">Get in touch</h1>
+    <p class="p_maindiv5">Stop wasting time and money designing and managing a website that doesn’t get
+        results.Happiness guaranteed!</p>
+    <div class="div_div5">
+        <div class="div1_div5">
+            <table class="table_div5">
+                <input class="s" type="name" placeholder="Name">
+                <input class="s" type="email" placeholder="Email"><br><br>
+                <input class="s" type="number" placeholder=" 📞Number">
+                <input class="s" type="text" placeholder="AI  subject"><br><br>
+                <textarea class="t" type="text" placeholder="🗒️ Message"></textarea><br>
+                <button class="b4">Submit</button>
+            </table>
+        </div>
+        <div class="div2_div5">
+            <div class="v"> <img class="m" src="phon.jpg"> +919302706772<br>
+                +919302702664 </div>
+            <div class="v"><img class="m" src="email.jpg">
+
+                yourmail@gmail.com<br>
+
+                admin@yourwebsite.com
+            </div>
+
+            <div class="v"><img class="m" src="location.jpg">'s House, 13/5 Road, <br>Sidny United State Of America
+            </div>
+        </div>
+    </div>
+</div>
+<!--....................................................... html for six page............................................................ -->
+<div class="main_div6">
+    <div class="div1_div6"><img class="m1" src="page6.jpg.png"></div>
+    <div class="div2_div6">
+
+        <div class="div2.1_div6">
+            <h1 calss="h_div">Nova</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Facilisis nulla placerat amet amet congue.
+            </p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            </li>
+        </div>
+        <div class="div2.2_div6">
+            <h2>QuikLink</h2>
+            <h4>Home</h4>
+            <h4>About<h4>
+                    <h4>service<h4>
+                            <h4>contact<h4>
+
+        </div>
+        </li>
+        <div class="div2.3_div6">
+            <h2> Service</h2>
+
+            <h4>Web Design</h4>
+            <h4>Web development</h4>
+            <h4>Seo optimization</h4>
+            <h4>Blog writing</h4>
+
+        </div>
+
+        <div class="DIV2.4_DIV6">
+            <h2>Download App</h2>
+
+            <h2><img class="m3" src="play.jpg"></h2>
+
+        </div>
+
+    </div>
+    <hr>
+    <h3 class="a">Designed by Tarun</h>
+</div>
+
+<body>
+
+</html>
